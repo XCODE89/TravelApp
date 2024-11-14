@@ -1,0 +1,24 @@
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+}
+
+.trips {
+    padding: 60px 20px;
+}
+  
+.trip_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+    justify-content: center;
+    gap: 30px;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}

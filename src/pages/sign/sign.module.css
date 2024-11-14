@@ -1,0 +1,87 @@
+.page {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+  }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin: 0 0 20px;
+  font-size: var(--font-size-400);
+  text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.input__heading {
+font-size: var(--font-size-100);
+line-height: 1;
+}
+
+.input input {
+    min-width: 160px;
+    min-height: 45px;
+    padding: 10px 15px;
+    font-size: var(--font-size-300);
+    background-color: var(--color-blue-100);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.input input::placeholder {
+    color: var(--color-blue-400);
+    opacity: 0.4;
+  }
+
+.link {
+  color: var(--color-blue-200);
+  transition: 0.1s color ease;
+}
+
+.link:hover {
+  color: var(--color-blue-300);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 15px;
+    color: var(--color-white);
+    font-size: var(--font-size-200);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-blue-200);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--color-blue-300);
+  }

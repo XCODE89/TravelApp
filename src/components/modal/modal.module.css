@@ -1,0 +1,136 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background-color: var(--overlay-color);
+}
+
+.book_trip_popup {
+    position: relative;
+    flex: 1;
+    max-width: 380px;
+    padding: 25px 40px 30px;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow);
+}
+  
+.book_trip_popup__close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    padding: 0;
+    font-weight: 300;
+    font-size: var(--font-size-400);
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+.book_trip_popup__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trip_info {
+    width: 100%;
+    max-width: 300px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-gray);
+}
+  
+.trip_info__title {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size: var(--font-size-400);
+    font-family: 'Playfair Display', serif;
+}
+  
+.trip_info__content {
+    display: flex;
+    font-weight: 300;
+}
+  
+.trip_info__duration {
+    min-width: 120px;
+    padding-left: 25px;
+    background-image: url('../../assets/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 15px;
+}
+  
+.trip_info__level::before {
+    content: '•';
+    margin-right: 10px;
+    color: var(--color-blue-200);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__heading {
+  font-size: var(--font-size-100);
+  line-height: 1;
+}
+
+.input input {
+  min-width: 160px;
+  min-height: 45px;
+  padding: 10px 15px;
+  font-size: var(--font-size-300);
+  background-color: var(--color-blue-100);
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.input input::placeholder {
+  color: var(--color-blue-400);
+  opacity: 0.4;
+}
+  
+.book_trip_popup__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 15px;
+    border-top: 1px solid var(--color-gray);
+}
+  
+.book_trip_popup__total_value {
+    font-weight: 600;
+    font-size: var(--font-size-400);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 15px;
+    color: var(--color-white);
+    font-size: var(--font-size-200);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-blue-200);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+  
+.button:hover {
+    background-color: var(--color-blue-300);
+}

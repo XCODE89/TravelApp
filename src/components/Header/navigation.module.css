@@ -1,0 +1,93 @@
+.header__nav {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.nav__header__list {
+display: flex;
+height: 100%;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.nav__header__item {
+border-left: 1px solid var(--color-gray);
+}
+
+.nav__header__inner {
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 80px;
+height: 100%;
+}
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+  }
+
+.profile__nav {
+position: relative;
+cursor: pointer;
+}
+
+.profile__nav:hover .profile__nav__list,
+.profile__nav:focus .profile__nav__list,
+.profile__nav__list:focus-within .profile__nav__list {
+  display: block;
+}
+
+.profile__nav__list {
+  position: absolute;
+  top: 90%;
+  right: 15px;
+  z-index: 5;
+  display: none;
+  min-width: 150px;
+  padding: 0;
+  list-style: none;
+  background-color: var(--color-white);
+  border-radius: 1px;
+  box-shadow: var(--shadow);
+}
+
+.profile__nav__item {
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+.profile__nav__item:first-child {
+  padding-top: 10px;
+}
+
+.profile__nav__sign_out {
+  min-height: auto;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 15px;
+    color: var(--color-white);
+    font-size: var(--font-size-200);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-blue-200);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .button:hover {
+    background-color: var(--color-blue-300);
+}
